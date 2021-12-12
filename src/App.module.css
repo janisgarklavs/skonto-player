@@ -1,0 +1,86 @@
+.root {
+  background-color: #fff;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1 0 auto;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 480px) {
+  .wrapper {
+    font-size: 10px;
+  }
+}
+
+.header {
+  font-size: 4.6em;
+  color: #c7102d;
+  text-align: center;
+}
+
+.footer {
+  background: #c7102d;
+  width: 100%;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  padding: 8px 0;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.players {
+  display: flex;
+  align-items: center;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-top: 5px;
+}
+
+.withMargin {
+  margin-right: 10px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.label {
+  margin-left: 5px;
+}
+
+.whatsApp {
+  margin-bottom: -2px;
+  color: #00a04a;
+}
+
+.envelope {
+  padding-top: 2px;
+}
+
+.email {
+  font-size: 0.9em;
+}

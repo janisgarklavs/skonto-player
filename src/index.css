@@ -1,0 +1,21 @@
+@import-normalize;
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
