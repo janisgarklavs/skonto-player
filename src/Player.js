@@ -5,10 +5,9 @@ import { PlayIcon } from "./PlayIcon";
 import { StopIcon } from "./StopIcon";
 
 import styles from "./Player.module.css";
-import { VolumeDownFill, VolumeUpFill } from "react-bootstrap-icons";
+import { VolumeDownFill } from "react-bootstrap-icons";
 
 export const Player = ({
-  id,
   title,
   toggleStream,
   isPlaying,
@@ -18,7 +17,7 @@ export const Player = ({
   return (
     <>
       <button
-        onClick={() => toggleStream(id)}
+        onClick={toggleStream}
         className={classNames(styles.root, { [styles.isActive]: isActive })}
       >
         <div>
@@ -41,13 +40,10 @@ export const Player = ({
           min={0}
           max={1}
           step={0.05}
-          onChange={(e) => setVolume(id, e.target.value)}
-          className={classNames(styles.volume, { [styles.isActive]: isActive })}
+          onChange={(e) => setVolume(e.target.value)}
+          className={classNames(styles.volume)}
           disabled={!isActive}
         />
-        <div className={styles.iconDown}>
-          <VolumeUpFill />
-        </div>
       </div>
     </>
   );
